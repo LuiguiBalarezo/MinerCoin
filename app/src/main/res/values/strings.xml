@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MinerCoin</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Font-->
+    <string name="fontNotice" translatable="false">fonts/back_to_black_bold_demo.ttf</string>
+    <string name="roboto_light" translatable="false">fonts/Roboto-Light.ttf</string>
+    <string name="roboto_regular" translatable="false">fonts/Roboto-Regular.ttf</string>
+    <string name="User">User</string>
+    <string name="Password">Password</string>
+
+</resources>

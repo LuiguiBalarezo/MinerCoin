@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="input" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="content_input">
+        <item name="android:padding">@dimen/padding_up_down_content_input</item>
+        <item name="android:background">@drawable/back_input</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom_content_input</item>
+    </style>
+
+    <style name="edt_input">
+        <item name="android:drawablePadding">15dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColorHint">@color/md_disabled_hint_text</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_input</item>
+    </style>
+
+</resources>
