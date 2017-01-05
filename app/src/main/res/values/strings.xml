@@ -8,5 +8,9 @@
     <string name="roboto_regular" translatable="false">fonts/Roboto-Regular.ttf</string>
     <string name="User">User</string>
     <string name="Password">Password</string>
+    <string name="Login">Login</string>
+    <string name="or_connect_with">Or Connect With</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="Sign_Up">Sign Up</string>
 
 </resources>

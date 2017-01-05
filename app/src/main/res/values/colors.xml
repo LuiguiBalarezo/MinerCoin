@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">@color/md_amber_600</color>
     <color name="colorAccent">@color/md_blue_600</color>
     <color name="colorIconPrimary">@color/md_blue_600</color>
+    <color name="colorLinkText">#55000000</color>
 </resources>
