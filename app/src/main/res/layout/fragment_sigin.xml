@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.toquescript.www.minercoin.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:id="@+id/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/width_hight_logo"
+            android:layout_height="@dimen/width_hight_logo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/logo" />
+
+        <fr.arnaudguyon.smartfontslib.FontTextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Miner Coin"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            app:font="@string/fontNotice" />
+
+        <LinearLayout
+            android:id="@+id/lnl_content_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/content_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <fr.arnaudguyon.smartfontslib.FontEditText
+                    android:id="@+id/edt_usuario"
+                    style="@style/edt_input"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:hint="@string/User"
+                    android:inputType="textEmailAddress"
+                    app:font="@string/roboto_regular" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/ic_checked" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/content_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <fr.arnaudguyon.smartfontslib.FontEditText
+                    android:id="@+id/edt_clave"
+                    style="@style/edt_input"
+                    android:drawableLeft="@drawable/ic_vpn_key"
+                    android:hint="@string/Password"
+                    android:inputType="textEmailAddress"
+                    app:font="@string/roboto_regular" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/ic_cancel" />
+
+            </RelativeLayout>
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btn_login"
+                fbutton:buttonColor="@color/md_blue_500"
+                fbutton:shadowEnabled="true"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_alignEnd="@+id/rltv_base_content_login"
+                android:layout_alignLeft="@+id/rltv_base_content_login"
+                android:layout_alignRight="@+id/rltv_base_content_login"
+                android:layout_alignStart="@+id/rltv_base_content_login"
+                android:layout_below="@id/rltv_base_content_login"
+                android:layout_marginBottom="10dp"
+                android:minHeight="55dp"
+                android:minWidth="140dp"
+                android:text="@string/Login"
+                android:textColor="@android:color/white"
+                app:cornerRadius="30dp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp">
+
+                <fr.arnaudguyon.smartfontslib.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/forgot_password"
+                    android:textColor="@color/colorLinkText"
+                    android:textSize="@dimen/text_size_small"
+                    app:font="@string/roboto_light" />
+
+                <fr.arnaudguyon.smartfontslib.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/Sign_Up"
+                    android:textColor="@color/colorLinkText"
+                    android:textSize="@dimen/text_size_small"
+                    app:font="@string/roboto_light" />
+
+            </RelativeLayout>
+
+            <fr.arnaudguyon.smartfontslib.FontTextView
+                android:id="@+id/txt_or"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/or_connect_with"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_small"
+                app:font="@string/roboto_light" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/lnl_content_login"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btn_facebook"
+                fbutton:buttonColor="@color/facebook"
+                fbutton:shadowEnabled="true"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:drawableLeft="@drawable/ic_facebook"
+                android:minHeight="55dp"
+                android:minWidth="55dp"
+                android:paddingLeft="19dp"
+                android:textColor="@android:color/white"
+                app:cornerRadius="35dp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btn_google"
+                fbutton:buttonColor="@color/googleplus"
+                fbutton:shadowEnabled="true"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/ic_google_plus"
+                android:minHeight="55dp"
+                android:minWidth="55dp"
+                android:paddingLeft="20dp"
+                android:textColor="@android:color/white"
+                app:cornerRadius="35dp" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btn_twitter"
+                fbutton:buttonColor="@color/twitter"
+                fbutton:shadowEnabled="true"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:drawableLeft="@drawable/ic_twitter"
+                android:minHeight="55dp"
+                android:minWidth="55dp"
+                android:paddingLeft="20dp"
+                android:textColor="@android:color/white"
+                app:cornerRadius="35dp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
