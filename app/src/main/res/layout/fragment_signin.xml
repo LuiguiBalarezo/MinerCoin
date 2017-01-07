@@ -30,7 +30,7 @@
             android:layout_below="@id/logo"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
-            android:text="Miner Coin"
+            android:text="@string/miner_coin"
             android:textColor="@android:color/white"
             android:textSize="25sp"
             app:font="@string/fontNotice" />
